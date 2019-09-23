@@ -15,6 +15,6 @@ class App < Sinatra::Base
       @sessions = session
       item = params["item"]
       @sessions[:item] = item
-
+      erb :display_item
     end
 end
